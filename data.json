@@ -1,0 +1,26 @@
+[
+    {
+        "Product_Name": "Coffee (25g)",
+        "Product_Description": "Beverage brewed from roasted coffee beans.",
+        "Product_Price": 30.00,
+        "Product_Date_Added": "2024-02-10"
+    },
+    {
+        "Product_Name": "Loaf Bread",
+        "Product_Description": "Made of flour or meal that moistened, kneaded, and sometimes fermented.",
+        "Product_Price": 60.00,
+        "Product_Date_Added": "2024-02-10"
+    },
+    {
+        "Product_Name": "Birch Tree Fortified Milk (300g)",
+        "Product_Description": "100% pure cow's milk with no added sugar, no added preservatives.",
+        "Product_Price": 120.00,
+        "Product_Date_Added": "2024-02-10"
+    },
+    {
+        "Product_Name": "Sugar (1kl)",
+        "Product_Description": "All sweet carbohydrates.",
+        "Product_Price": 80.00,
+        "Product_Date_Added": "2024-02-10"
+    }
+]
