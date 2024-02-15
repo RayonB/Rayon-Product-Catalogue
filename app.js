@@ -8,18 +8,18 @@ document.addEventListener("DOMContentLoaded", function() {
   
 ProductCardsContainer.classList.add("card-group"); // Adding card-group class to productCardsContainer
 
-data.products.forEach(product => {
+data.products.forEach(Product => {
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = `
-      <img src="${product.product_image}" class="card-img-top" alt="${product.product_name}">
+      <img src="${Product.Product_Image}" class="card-img-top" alt="${Product.Product_Name}">
       <div class="card-body">
-        <h5 class="card-title">${product.product_name}</h5>
-        <p class="card-text">${product.product_description}</p>
-        <p class="card-text">Price: $${product.product_price.toFixed(2)}</p>
-        <p class="card-text"><small class="text-body-secondary">Date Added: ${product.product_dateAdded}</small></p>
-        <p class="card-text"><small class="text-body-secondary">Expiration Date: ${product.product_ExpirationDate}</small></p>
-        <button class="btn btn-primary add-to-cart" data-product="${product.product_name}">Add to Cart</button>
+        <h5 class="card-title">${Product.Product_Name}</h5>
+        <p class="card-text">${Product.Product_Description}</p>
+        <p class="card-text">Price: $${Product.product_price.toFixed(2)}</p>
+        <p class="card-text"><small class="text-body-secondary">Date Added: ${Product.product_dateAdded}</small></p>
+        <p class="card-text"><small class="text-body-secondary">Expiration Date: ${Product.product_ExpirationDate}</small></p>
+        <button class="btn btn-primary add-to-cart" data-product="${Product.product_name}">Add to Cart</button>
       </div>
     `;
     ProductCardsContainer.appendChild(card);
