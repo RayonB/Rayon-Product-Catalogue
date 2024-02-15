@@ -24,3 +24,6 @@ ProductCardsContainer.classList.add("card-group"); // Adding card-group class to
         `;
         ProductCardsContainer.appendChild(Card);
     });
+
+    // Event listener for Add to Cart buttons
+    ProductCardsContainer.addEventListener("click", function(event) {
