@@ -23,7 +23,6 @@ data.products.forEach(Product => {
       <button class="btn btn-primary add-to-cart" data-product="${Product.Product_Name}">Add to Cart</button>
     </div>
   `;
-
     ProductCardsContainer.appendChild(card);
   });
 
