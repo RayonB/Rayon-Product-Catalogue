@@ -14,4 +14,6 @@ ProductCardsContainer.classList.add("card-group"); // Adding card-group class to
             <div class="card-body">
             <h5 class="card-title">${Product.Product_Name}</h5>
             <p class="card-text">${Product.Product_Description}</p>
+            <p class="card-text">Price: $${Product.Product_Price.toFixed(2)}</p>
+            <p class="card-text"><small class="text-body-secondary">Date Added: ${Product.Product_Date_Added}</small></p>
   
