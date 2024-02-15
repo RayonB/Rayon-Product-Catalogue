@@ -12,6 +12,7 @@ ProductCardsContainer.classList.add("card-group"); // Adding card-group class to
         const Card = document.createElement("div");
         Card.className = "Card";
         Card.innerHTML = `
+        
             <img src="${Product.Product_image}" class="card-img-top" alt="${Product.Product_Name}">
             <div class="card-body">
             <h5 class="card-title">${Product.Product_Name}</h5>
@@ -29,11 +30,16 @@ ProductCardsContainer.classList.add("card-group"); // Adding card-group class to
     ProductCardsContainer.addEventListener("click", function(event) {
         if (event.target.classList.contains("add-to-cart")) {
             const ProductName = event.target.getAttribute("data-product");
-            if (cart[ProductName]) {
-              cart[ProductName]++;
+            if (ProductList[ProductName]) {
+                ProductList[ProductName]++;
             } else {
-              cart[ProductName] = 1;
+                ProductList[ProductName] = 1;
             }
-            updateCartDisplay();
+            updateProductListDisplay();
           }
         });
+
+        // Function to update the ProductList display
+        function updateCartDisplay() {
+            ProductListItemsContainer.innerHTML = "";
+          Object.keys(ProductList).forEach(ProductName => {
