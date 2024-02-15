@@ -41,9 +41,12 @@ data.products.forEach(product => {
         });
 
         // Function to update the ProductList display
-        function updateCartDisplay() {
+        function updateProductListDisplay() {
             ProductListItemsContainer.innerHTML = "";
 
           Object.keys(ProductList).forEach(ProductName => {
-            const quantity = cart[productName];
+            const quantity = ProductList[ProductName];
             const li = document.createElement("li");
+            li.textContent = `${ProductName}: ${quantity}`;
+            ProductListItemsContainer.appendChild(li);
+        });
