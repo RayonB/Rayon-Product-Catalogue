@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
 ProductCardsContainer.classList.add("card-group"); // Adding card-group class to productCardsContainer
 
     data.products.forEach(Product => {
-        const card = document.createElement("div");
+        const Card = document.createElement("div");
+        Card.className = "Card";
+        Card.innerHTML = `
             <img src="${product.product_image}" class="card-img-top" alt="${Product.Product_Name}">
             <div class="card-body">
             <h5 class="card-title">${Product.Product_Name}</h5>
