@@ -50,6 +50,7 @@ data.products.forEach(product => {
             li.textContent = `${ProductName}: ${quantity}`;
             ProductListItemsContainer.appendChild(li);
         });
+      
         // Update the count element to display the number of unique items in the ProductList
         document.getElementById('count').style.display = 'flex'; // Assuming you're using flexbox
         document.getElementById('count').innerText = Object.keys(ProductList).length;
@@ -58,3 +59,11 @@ data.products.forEach(product => {
     .catch(error => {
         console.error("Error fetching products:", error);
       });
+           const ProductListLink = document.querySelector('.cart');
+           const ProductListItems = document.getElementById('cart-items');
+    
+           // Prevent default behavior on click
+        ProductListLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        
+        // Toggle display of cart items
