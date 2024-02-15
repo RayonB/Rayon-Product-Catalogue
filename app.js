@@ -65,5 +65,12 @@ data.products.forEach(product => {
            // Prevent default behavior on click
         ProductListLink.addEventListener('click', function(event) {
         event.preventDefault();
-        
+
         // Toggle display of cart items
+        if (cartItems.style.display === 'none') {
+            cartItems.style.display = 'flex';
+        } else {
+            cartItems.style.display = 'none';
+        }
+    });
+});
