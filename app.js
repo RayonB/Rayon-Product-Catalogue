@@ -12,7 +12,7 @@ ProductCardsContainer.classList.add("card-group"); // Adding card-group class to
         const Card = document.createElement("div");
         Card.className = "Card";
         Card.innerHTML = `
-            <img src="${product.product_image}" class="card-img-top" alt="${Product.Product_Name}">
+            <img src="${Product.Product_image}" class="card-img-top" alt="${Product.Product_Name}">
             <div class="card-body">
             <h5 class="card-title">${Product.Product_Name}</h5>
             <p class="card-text">${Product.Product_Description}</p>
@@ -22,3 +22,5 @@ ProductCardsContainer.classList.add("card-group"); // Adding card-group class to
             <button class="btn btn-primary add-to-cart" data-product="${{Product.Product_Name}">Add to Cart</button>
           </div>
         `;
+        ProductCardsContainer.appendChild(Card);
+    });
