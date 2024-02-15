@@ -16,4 +16,7 @@ ProductCardsContainer.classList.add("card-group"); // Adding card-group class to
             <p class="card-text">${Product.Product_Description}</p>
             <p class="card-text">Price: $${Product.Product_Price.toFixed(2)}</p>
             <p class="card-text"><small class="text-body-secondary">Date Added: ${Product.Product_Date_Added}</small></p>
-  
+            <p class="card-text"><small class="text-body-secondary">Expiration Date: ${Product.Product_Expiration_Date}</small></p>
+            <button class="btn btn-primary add-to-cart" data-product="${{Product.Product_Name}">Add to Cart</button>
+          </div>
+        `;
