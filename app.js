@@ -43,4 +43,7 @@ data.products.forEach(product => {
         // Function to update the ProductList display
         function updateCartDisplay() {
             ProductListItemsContainer.innerHTML = "";
+
           Object.keys(ProductList).forEach(ProductName => {
+            const quantity = cart[productName];
+            const li = document.createElement("li");
