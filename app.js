@@ -66,11 +66,11 @@ data.products.forEach(product => {
         ProductListLink.addEventListener('click', function(event) {
         event.preventDefault();
 
-        // Toggle display of cart items
-        if (cartItems.style.display === 'none') {
-            cartItems.style.display = 'flex';
+        // Toggle display of ProductListItems
+        if (ProductListItems.style.display === 'none') {
+            ProductListItems.style.display = 'flex';
         } else {
-            cartItems.style.display = 'none';
+            ProductListItems.style.display = 'none';
         }
     });
 });
