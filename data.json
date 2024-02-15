@@ -21,6 +21,11 @@
         "Product_Description": "100% pure cow's milk with no added sugar, no added preservatives.",
         "Product_Price": 120.00,
         "Product_Image": "https://shopsuki.ph/cdn/shop/files/748485401508b_1024x.jpg?v=1702358989 ",
+        "Product_Date_Added": "2024-06-05",
+        "Product_Expiration_Date": "2025-07-05"
+    },
+    {
+        "Product_Name": "Brown Sugar (1kl)",
        
       }
     ]
