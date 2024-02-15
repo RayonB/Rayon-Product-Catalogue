@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", function() {
       .then(response => response.json())
       .then(data => {
         const ProductCardsContainer = document.getElementById("Product-Cards");
-        const CartItemsContainer = document.getElementById("cart-items");
+        const CartItemsContainer = document.getElementById("Cart-Items");
         const ProductList = {}; // Object to store cart items and their quantities
   
-        ProductCardsContainer.classList.add("card-group"); // Adding card-group class to productCardsContainer
+        ProductCardsContainer.classList.add("Card-Group"); // Adding card-group class to productCardsContainer
   
         data.products.forEach(Product => {
-          const card = document.createElement("div");
+          const Card = document.createElement("div");
         
