@@ -12,6 +12,7 @@ data.products.forEach(Product => {
     const card = document.createElement("div");
     card.className = "card";
     card.innerHTML = `
+    
     <img src="${Product.Product_Image}" class="card-img-top" alt="${Product.Product_Name}">
     <div class="card-body">
       <h5 class="card-title">${Product.Product_Name}</h5>
