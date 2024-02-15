@@ -16,10 +16,10 @@ data.products.forEach(Product => {
       <div class="card-body">
         <h5 class="card-title">${Product.Product_Name}</h5>
         <p class="card-text">${Product.Product_Description}</p>
-        <p class="card-text">Price: $${Product.product_price.toFixed(2)}</p>
-        <p class="card-text"><small class="text-body-secondary">Date Added: ${Product.product_dateAdded}</small></p>
-        <p class="card-text"><small class="text-body-secondary">Expiration Date: ${Product.product_ExpirationDate}</small></p>
-        <button class="btn btn-primary add-to-cart" data-product="${Product.product_name}">Add to Cart</button>
+        <p class="card-text">Price: $${Product.Product_Price.toFixed(2)}</p>
+        <p class="card-text"><small class="text-body-secondary">Date Added: ${Product.Product_Date_Added}</small></p>
+        <p class="card-text"><small class="text-body-secondary">Expiration Date: ${Product.Product_Expiration_Date}</small></p>
+        <button class="btn btn-primary add-to-cart" data-product="${Product.Product_Name}">Add to Cart</button>
       </div>
     `;
     ProductCardsContainer.appendChild(card);
