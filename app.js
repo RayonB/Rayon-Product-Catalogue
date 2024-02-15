@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const CartItemsContainer = document.getElementById("Cart-Items");
         const ProductList = {}; // Object to store cart items and their quantities
   
-        ProductCardsContainer.classList.add("Card-Group"); // Adding card-group class to productCardsContainer
-  
-        data.products.forEach(Product => {
+ProductCardsContainer.classList.add("Card-Group"); // Adding card-group class to productCardsContainer
+    data.products.forEach(Product => {
           const Card = document.createElement("div");
           Card.className = "Card";
+          Card.innerHTML = `
