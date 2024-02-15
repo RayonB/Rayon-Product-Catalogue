@@ -27,3 +27,13 @@ ProductCardsContainer.classList.add("card-group"); // Adding card-group class to
 
     // Event listener for Add to Cart buttons
     ProductCardsContainer.addEventListener("click", function(event) {
+        if (event.target.classList.contains("add-to-cart")) {
+            const ProductName = event.target.getAttribute("data-product");
+            if (cart[ProductName]) {
+              cart[ProductName]++;
+            } else {
+              cart[ProductName] = 1;
+            }
+            updateCartDisplay();
+          }
+        });
