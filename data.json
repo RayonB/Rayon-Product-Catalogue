@@ -13,25 +13,14 @@
         "Product_Description": "Made of flour or meal that moistened, kneaded, and sometimes fermented.",
         "Product_Price": 60.00,
         "Product_Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlnnlpP7xQgZ-9kdGxwoyp1PDuK_r60FbD2A&usqp=CAU ",
-        "Product_Date_Added": "2024-02-10",
-        "Product_Expiration_Date": 
+        "Product_Date_Added": "2024-03-10",
+        "Product_Expiration_Date": "2026-03-10"
     },
     {
         "Product_Name": "Birch Tree Fortified Milk (300g)",
         "Product_Description": "100% pure cow's milk with no added sugar, no added preservatives.",
         "Product_Price": 120.00,
-        "Product_Image": " ",
-        "Product_Date_Added": "2024-02-10"
-        "Product_Expiration_Date":
-    },
-    {
-        "Product_Name": "Sugar (1kl)",
-        "Product_Description": "All sweet carbohydrates.",
-        "Product_Price": 80.00,
-        "Product_Image": " ",
-        "Product_Date_Added": "2024-02-10"
-        "Product_Expiration_Date": " "
-
+       
       }
     ]
   }
