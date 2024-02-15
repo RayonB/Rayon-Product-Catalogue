@@ -10,4 +10,4 @@ document.addEventListener("DOMContentLoaded", function() {
   
         data.products.forEach(Product => {
           const Card = document.createElement("div");
-        
+          Card.className = "Card";
