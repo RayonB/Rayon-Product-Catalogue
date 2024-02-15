@@ -55,3 +55,6 @@ data.products.forEach(product => {
         document.getElementById('count').innerText = Object.keys(ProductList).length;
       }
     })
+    .catch(error => {
+        console.error("Error fetching products:", error);
+      });
