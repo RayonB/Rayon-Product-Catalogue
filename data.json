@@ -26,7 +26,9 @@
     },
     {
         "Product_Name": "Brown Sugar (1kl)",
-       
+        "Product_Description": "All sweet carbohydrates.",
+        "Product_Price": 80.00,
+        
       }
     ]
   }
