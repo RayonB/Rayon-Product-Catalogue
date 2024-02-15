@@ -50,3 +50,8 @@ data.products.forEach(product => {
             li.textContent = `${ProductName}: ${quantity}`;
             ProductListItemsContainer.appendChild(li);
         });
+        // Update the count element to display the number of unique items in the ProductList
+        document.getElementById('count').style.display = 'flex'; // Assuming you're using flexbox
+        document.getElementById('count').innerText = Object.keys(ProductList).length;
+      }
+    })
