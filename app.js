@@ -11,3 +11,4 @@ ProductCardsContainer.classList.add("Card-Group"); // Adding card-group class to
           const Card = document.createElement("div");
           Card.className = "Card";
           Card.innerHTML = `
+          <img src="${Product.Product_Image}" class="card-img-top" alt="${Product.Product_Name}"
